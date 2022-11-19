@@ -196,5 +196,7 @@ public class CoheteEspacial {
         miCohete.setAgenciaEspacial(strAgenciaEspacial) ;
         
         System.out.println("Estación espacial: " + miCohete.getAgenciaEspacial());
+
+        System.out.println("Una pequeña prueba hecha en remoto");
     }
 }
