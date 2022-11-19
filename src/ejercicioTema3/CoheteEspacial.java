@@ -4,6 +4,8 @@
  */
 package ejercicioTema3;
 
+import java.util.Scanner;
+
 /**
  * 
  * @author Adrián Arjona
@@ -166,7 +168,33 @@ public class CoheteEspacial {
     
     public static void main(String[] args) {
         
+        // Mensaje de bienvenida por consola
+        
         System.out.println("Bienvenido/a al programa de la clase Cohete Espacial "
                 + "de Francisco Adrián Arjona Bravo");
+        
+        // Creación de objeto
+        
+        CoheteEspacial miCohete = new CoheteEspacial() ;
+        
+        // Solicitud al usuario de valores para el objeto
+        
+        Scanner entrada = new Scanner (System.in); // Creación de la clase Scanner
+        
+        System.out.println("Por favor, introduce un nombre para el cohete: "); // Pedimos el dato al usuario
+        
+        String strDenominacionCohete = entrada.nextLine() ; // Almacenamos el dato que introduzca el usuario por consola...
+        miCohete.setDenominacion(strDenominacionCohete); // ...y lo asignamos al objeto.
+        
+        System.out.println("Nombre: " + miCohete.getDenominacion()); // Mostramos por pantalla el nombre.
+        
+            // Hacemos lo mismo con la agencia espacial.
+        
+        System.out.println("Introduce ahora el nombre de la agencia espacial: ");
+        
+        String strAgenciaEspacial = entrada.nextLine() ;
+        miCohete.setAgenciaEspacial(strAgenciaEspacial) ;
+        
+        System.out.println("Estación espacial: " + miCohete.getAgenciaEspacial());
     }
 }
