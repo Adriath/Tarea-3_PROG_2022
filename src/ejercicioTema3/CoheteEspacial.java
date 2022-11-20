@@ -184,8 +184,8 @@ public class CoheteEspacial {
     
     public int sumarEtapas(CoheteEspacial c) {
         
-        this.etapas = c.etapas ;
-        return etapas ;
+        int suma = this.etapas + c.etapas ;
+        return suma ;
     }
     
     
@@ -252,9 +252,6 @@ public class CoheteEspacial {
         
         System.out.println(miCohete.toString());
         
-        
-        
     }
-    
    
 }
