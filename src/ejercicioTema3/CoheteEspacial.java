@@ -306,6 +306,28 @@ public class CoheteEspacial {
                 System.out.println(cohete2.toString());
                 System.out.println(cohete3.toString());
                     
+                
+            // APARTADO E
+            
+                // Creo un objeto (cohete) inventado y lo muestro con toString()
+                
+                CoheteEspacial cohete4 = new CoheteEspacial("Pepinorion", "Ciudad Real", 130f, 78f, 34343432, 1, true) ;
+                System.out.println("\n" + cohete4.toString());
+                
+            // APARTADO F
+            
+                // Modifico valores del cohete recién creado y muestro cambios con toString()
+                
+                cohete4.setDenominacion("Mazinger Peta"); // Nombre (denominación)
+                cohete4.setAgenciaEspacial("Petardos Paco S.A."); // Agencia espacial
+                cohete4.setAltura(370f); // Altura
+                cohete4.setDiametro(139.98f); // Diámetro
+                cohete4.setMasa(940005); // Peso
+                cohete4.setEtapas(5); // Etapas
+                cohete4.setReutilizable(false); // Si reutilizable
+                
+                System.out.println("\nCambios aplicados: ");
+                System.out.println(cohete4.toString());
     }
    
 }
