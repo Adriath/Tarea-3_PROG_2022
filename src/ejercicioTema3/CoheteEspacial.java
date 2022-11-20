@@ -333,9 +333,16 @@ public class CoheteEspacial {
             
                 // Mostramos por pantalla la suma de las etapas de los cohetes 1 y 3
                 
-                System.out.println("La suma de etapas de " + cohete1.getDenominacion() +
+                System.out.println("\nLa suma de etapas de " + cohete1.getDenominacion() +
                         " y " + cohete3.getDenominacion() + 
                         " es: " + cohete1.sumarEtapas(cohete3));
+                
+            // APARTADO I
+            
+                //Mostramos por pantalla el volumen de uno de los cohetes (cohete 4)
+            
+                System.out.println("\nEl volumen del cohete " + cohete4.getDenominacion() + 
+                        " es: " + cohete4.calcularVolumen());
                 
     }
    
