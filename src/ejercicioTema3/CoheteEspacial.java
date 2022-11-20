@@ -196,7 +196,32 @@ public class CoheteEspacial {
         miCohete.setAgenciaEspacial(strAgenciaEspacial) ;
         
         System.out.println("Estación espacial: " + miCohete.getAgenciaEspacial());
-
-        System.out.println("Una pequeña prueba hecha en remoto");
+        
+        
+        // Pedimos todos los datos para luego mostrarlos a la vez con toString()
+        
+        System.out.println("Vamos a diseñar el cohete espacial. Por favor, introduce el nombre: ");
+        miCohete.setDenominacion(entrada.nextLine());
+        
+        System.out.println("¿Cuál es la agencia espacial?");
+        miCohete.setAgenciaEspacial(entrada.nextLine());
+        
+        System.out.println("Introduce la altura en metros: ");
+        miCohete.setAltura(entrada.nextFloat());
+        
+        System.out.println("Ahora el diámetro: ");
+        miCohete.setDiametro(entrada.nextFloat());
+        
+        System.out.println("Introdcue la masa del cohete en kg: ");
+        miCohete.setMasa(entrada.nextInt());
+        
+        System.out.println("¿Cuántas etapas tendrá? (entre 1 y 5)");
+        miCohete.setEtapas(entrada.nextInt());
+        
+        System.out.println("¿Es reutilizable?");
+        miCohete.setReutilizable(entrada.nextBoolean());
+        
+        System.out.println(miCohete.toString());
+        
     }
 }
