@@ -283,7 +283,10 @@ public class CoheteEspacial {
      * @return float volumen. Devuelve el volumen del cohete.
      */
     public float calcularVolumen(){
-        float volumen = (this.altura) * (this.diametro / 2) * (CoheteEspacial.PI) ;
+        
+        float radio = this.diametro / 2 ;
+        
+        float volumen = (this.altura) * ((float)Math.pow(radio, 2)) * (CoheteEspacial.PI) ;
         return volumen ;
     }
     
@@ -364,7 +367,7 @@ public class CoheteEspacial {
         System.out.println("Ahora el diámetro: ");
         miCohete.setDiametro(entrada.nextFloat());
         
-        System.out.println("Introdcue la masa del cohete en kg: ");
+        System.out.println("Introduce la masa del cohete en kg: ");
         miCohete.setMasa(entrada.nextInt());
         
         System.out.println("¿Cuántas etapas tendrá? (entre 1 y 5)");
