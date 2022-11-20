@@ -52,7 +52,12 @@ public class CoheteEspacial {
         this.masa = 0 ;
         this.etapas = 1 ;
         this.reutilizable = false ;
-        boolean reutilizable = true ;
+        
+        // APARTADO J
+        
+            // Añado contador
+            
+            contadorCohetes++ ;
     }
 
     public CoheteEspacial(String denominacion, String agenciaEspacial, float altura, float diametro, int masa, int etapas, boolean reutilizable) { // Constructor con parámetros
@@ -66,6 +71,12 @@ public class CoheteEspacial {
         this.masa = masa;
         this.etapas = etapas;
         this.reutilizable = reutilizable;
+        
+          // APARTADO J
+        
+            // Añado contador
+            
+            contadorCohetes++ ;
     }
     
     // GETTERS & SETTERS
@@ -193,9 +204,13 @@ public class CoheteEspacial {
         /* Creación del main, lectura de datos y asignación de atributos. */
     
     
+    // -----------------------------------------------------------------------
+    // ------------------------- MÉTODO MAIN ---------------------------------
+    // -----------------------------------------------------------------------
+    
     public static void main(String[] args) {
         
-        // Mensaje de bienvenida por consola
+       // Mensaje de bienvenida por consola
         
         System.out.println("Bienvenido/a al programa de la clase Cohete Espacial "
                 + "de Francisco Adrián Arjona Bravo");
