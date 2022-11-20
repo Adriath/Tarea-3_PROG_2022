@@ -13,6 +13,9 @@ import java.util.Scanner;
 public class CoheteEspacial {
 // Francisco Adrián Arjona Bravo - TEMA 3
     
+    // ------------ EJERCICIO 1 ------------
+        /* Creación de proyecto, paquete, clase y recoger datos por teclado */
+    
     // DECLARACIÓN VARIABLES DE CLASE
     
      // Constantes que nos servirán para controlar ciertas funcionalidades.
@@ -166,6 +169,10 @@ public class CoheteEspacial {
                 ", reutilizable=" + reutilizable + '}';
     }
     
+    // ------------ EJERCICIO 2 ------------
+        /* Creación del main, lectura de datos y asignación de atributos. */
+    
+    
     public static void main(String[] args) {
         
         // Mensaje de bienvenida por consola
@@ -197,6 +204,8 @@ public class CoheteEspacial {
         
         System.out.println("Estación espacial: " + miCohete.getAgenciaEspacial());
         
+        // ------------ EJERCICIO 3 ------------
+            /* Pedir resto de datos y mostrarlos con toString. */
         
         // Pedimos todos los datos para luego mostrarlos a la vez con toString()
         
@@ -218,10 +227,16 @@ public class CoheteEspacial {
         System.out.println("¿Cuántas etapas tendrá? (entre 1 y 5)");
         miCohete.setEtapas(entrada.nextInt());
         
-        System.out.println("¿Es reutilizable?");
+        System.out.println("¿Es reutilizable? (true = sí / false = no)");
         miCohete.setReutilizable(entrada.nextBoolean());
         
         System.out.println(miCohete.toString());
         
     }
+    
+    // ------------ EJERCICIO 4 ------------
+        /* Creación del método public float calcular*Volumen(). */
+    
+    
+    
 }
