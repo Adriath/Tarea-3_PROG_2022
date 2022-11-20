@@ -252,6 +252,60 @@ public class CoheteEspacial {
         
         System.out.println(miCohete.toString());
         
+        
+        // ------------ EJERCICIO 6 ------------
+            /* Comprobación de la comprensión y funcionamiento del programa y 
+            uso de constantes y variables estáticas. */
+            
+            // Creación de un objeto con el constructor por defecto
+            
+            CoheteEspacial defectoEjercicio6 = new CoheteEspacial() ;
+            
+            // Muestra por pantalla con toString()
+            
+            System.out.println(defectoEjercicio6.toString());
+        
+            
+            // APARTADO A
+            
+                // Creamos 3 objetos con el constructor con parámetros
+                
+                CoheteEspacial cohete1 = new CoheteEspacial("Ariane 5", "ESA", 59f, 5.4f, 777000, 2, false) ;
+                CoheteEspacial cohete2 = new CoheteEspacial("Saturno V", "NASA", 110.6f, 10.1f, 2970000, 3, false) ;
+                CoheteEspacial cohete3 = new CoheteEspacial("Falcon 9", "SpaceX", 70f, 3.66f, 549054, 2, true) ;
+
+            // APARTADO B
+            
+                // Mostramos los datos de los tres objetos con toString()
+                
+                System.out.println(cohete1.toString());
+                System.out.println(cohete2.toString());
+                System.out.println(cohete3.toString());
+                
+            // APARTADO C
+            
+                // Cambiamos algunas propiedades
+                
+                    // Cohete 1
+                    cohete1.setAltura(47f); // La altura
+                    cohete1.setMasa(541000); // La masa
+                    // Cohete 2
+                    cohete2.setDenominacion("Prototipo"); // El nombre (denominación)
+                    cohete2.setReutilizable(true); // Si reutilizable
+                    // Cohete 3
+                    cohete3.setMasa(6788000); // La masa
+                    cohete3.setAgenciaEspacial("ACME"); // La agencia espacial
+                    
+            // APARTADO D
+                    
+                // Los mostramos por pantalla con toSring() para ver los cambios
+                
+                System.out.println("\nAhora con los cambios aplicados: \n");
+                
+                System.out.println(cohete1.toString());
+                System.out.println(cohete2.toString());
+                System.out.println(cohete3.toString());
+                    
     }
    
 }
