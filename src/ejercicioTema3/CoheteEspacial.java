@@ -359,6 +359,19 @@ public class CoheteEspacial {
                 System.out.println("\nEl volumen del cohete " + cohete4.getDenominacion() + 
                         " es: " + cohete4.calcularVolumen());
                 
+            // APARTADO K
+            
+                // Cambiamos el valor de etapas a 10 en el cohete 1 y lo mostramos. Debería dar 5
+                
+                cohete1.setEtapas(10);
+                System.out.println("\n" + cohete1.toString());
+                
+            // APARTADO L
+            
+                // Realizamos lo mismo en cohete 2. El resultado debería ser 1
+                
+                cohete2.setEtapas(-1);
+                System.out.println("\n" + cohete2.toString());
     }
    
 }
