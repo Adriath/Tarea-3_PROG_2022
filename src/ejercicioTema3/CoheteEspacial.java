@@ -328,6 +328,15 @@ public class CoheteEspacial {
                 
                 System.out.println("\nCambios aplicados: ");
                 System.out.println(cohete4.toString());
+                
+            // APARTADO H
+            
+                // Mostramos por pantalla la suma de las etapas de los cohetes 1 y 3
+                
+                System.out.println("La suma de etapas de " + cohete1.getDenominacion() +
+                        " y " + cohete3.getDenominacion() + 
+                        " es: " + cohete1.sumarEtapas(cohete3));
+                
     }
    
 }
