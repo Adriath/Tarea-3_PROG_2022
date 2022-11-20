@@ -7,6 +7,7 @@ package ejercicioTema3;
 import java.util.Scanner;
 
 /**
+ * Tarea 3 del módulo de PROGRAMACIÓN de DAW
  * 
  * @author Adrián Arjona
  */
@@ -41,6 +42,9 @@ public class CoheteEspacial {
     
     // CONSTRUCTORES
     
+    /**
+     * Constructor por defecto de la clase CoheteEspacial.
+     */
     public CoheteEspacial() { // Constructor por defecto
         
         // Inicializamos el cohete con valores por defecto.
@@ -53,13 +57,24 @@ public class CoheteEspacial {
         this.etapas = 1 ;
         this.reutilizable = false ;
         
-        // APARTADO J
+        // APARTADO J (ejercicio 6)
         
             // Añado contador
             
             contadorCohetes++ ;
     }
 
+    /**
+     * Constructor con parámetros de la clase CoheteEspacial.
+     * 
+     * @param denominacion. String. Nombre del cohete.
+     * @param agenciaEspacial String. Agencia espacial.
+     * @param altura float. Altura en metros del cohete.
+     * @param diametro float. Diámetro en metros del cohete.
+     * @param masa int. Masa en kilogramos del cohete.
+     * @param etapas int. Número de etapas.
+     * @param reutilizable boolean. Si es reutilizable (true) o no (false).
+     */
     public CoheteEspacial(String denominacion, String agenciaEspacial, float altura, float diametro, int masa, int etapas, boolean reutilizable) { // Constructor con parámetros
         
         // Inicializamos el cohete con valores que se pasen al crear el objeto.
@@ -72,7 +87,7 @@ public class CoheteEspacial {
         this.etapas = etapas;
         this.reutilizable = reutilizable;
         
-          // APARTADO J
+          // APARTADO J (ejercicio 6)
         
             // Añado contador
             
@@ -83,60 +98,122 @@ public class CoheteEspacial {
     
         // Denominación
 
+    /**
+     * Método que sirve para obtener el nombre del cohete.
+     * 
+     * @return String denominacion. Devuelve el nombre del cohete.
+     */
     public String getDenominacion() {
         return denominacion;
     }
 
+    /**
+     * Método que modifica el nombre del cohete.
+     * 
+     * @param denominacion. String. Nombre del cohete.
+     */
     public void setDenominacion(String denominacion) {
         this.denominacion = denominacion;
     }
     
         // Agencia espacial
 
+    /**
+     * Método que sirve para obtener la agencia espacial del cohete.
+     * 
+     * @return String agenciaEspacial. Devuelve la agencia espacial.
+     */
     public String getAgenciaEspacial() {
         return agenciaEspacial;
     }
 
+    /**
+     * Método que modifica la agencia espacial del cohete.
+     * 
+     * @param agenciaEspacial. String. Agencia espacial.
+     */
     public void setAgenciaEspacial(String agenciaEspacial) {
         this.agenciaEspacial = agenciaEspacial;
     }
     
         // Altura
 
+    /**
+     * Método que sirve para obtener la altura del cohete.
+     * 
+     * @return float altura. Devuelve la altura.
+     */
     public float getAltura() {
         return altura;
     }
 
+    /**
+     * Método que modifica la altura del cohete.
+     * 
+     * @param altura . Float. Altura del cohete.
+     */
     public void setAltura(float altura) {
         this.altura = altura;
     }
     
         // Diámetro
 
+    /**
+     * Método que sirve para obtener el diámetro del cohete.
+     * 
+     * @return float diametro. Devuelve el diámetro.
+     */
     public float getDiametro() {
         return diametro;
     }
 
+    /**
+     * Método que modifica el diámetro del cohete.
+     * 
+     * @param diametro . Float. Diámetro del cohete.
+     */
     public void setDiametro(float diametro) {
         this.diametro = diametro;
     }
     
         // Masa
 
+    /**
+     * Método que sirve para obtener el área del cohete.
+     * 
+     * @return int masa. Devuelve la masa.
+     */
     public int getMasa() {
         return masa;
     }
 
+    /**
+     * Método que modifica la masa del cohete.
+     * 
+     * @param masa . Int. Masa del cohete.
+     */
     public void setMasa(int masa) {
         this.masa = masa;
     }
     
         // Etapas
 
+    /**
+     * Método que sirve para obtener las etapas del cohete.
+     * 
+     * @return int etapas. Devuelve las etapas.
+     */
     public int getEtapas() {
         return etapas;
     }
     
+    /**
+     * Método que modifica las etapas del cohete.
+     * 
+     * El valor tiene que estar entre 1 y 5 (inclusive).
+     * 
+     * @param etapas . Int. Etapas del cohete.
+     */
     public void setEtapas(int etapas) {
         
         /* En este método nos aseguramos de que un cohete nunca pueda tener un 
@@ -162,16 +239,31 @@ public class CoheteEspacial {
 
         // Reutilizable
     
+    /**
+     * Método que sirve para obtener si el cohete es reutilizable.
+     * 
+     * @return boolean reutilizable. Devuelve true (sí) o false (no).
+     */
     public boolean isReutilizable() {
         return reutilizable;
     }
 
+    /**
+     * Método que modifica si el cohete es reutilizable o no.
+     * 
+     * @param reutilizable . Boolean. Si el cohete es reutilizable, true = sí y false = no.
+     */
     public void setReutilizable(boolean reutilizable) {
         this.reutilizable = reutilizable;
     }
     
     // TO STRING
 
+    /**
+     * Método toString() de la clase CoheteEspacial.
+     * 
+     * @return Devuelve un mensaje por pantalla con todos los datos del cohete.
+     */
     @Override
     public String toString() {
         return "CoheteEspacial{" + "denominacion=" + denominacion + 
@@ -185,6 +277,11 @@ public class CoheteEspacial {
     // ------------ EJERCICIO 4 ------------
         /* Creación del método public float calcularVolumen(). */
     
+    /**
+     * Método que calcula el volumen del cohete.
+     * 
+     * @return float volumen. Devuelve el volumen del cohete.
+     */
     public float calcularVolumen(){
         float volumen = (this.altura) * (this.diametro / 2) * (CoheteEspacial.PI) ;
         return volumen ;
@@ -193,6 +290,12 @@ public class CoheteEspacial {
     // ------------ EJERCICIO 5 ------------
         /* Creación del método sumarEtapas. */
     
+    /**
+     * Método que suma las etapas del cohete a las de otro introducido por parámetros.
+     * 
+     * @param c. CoheteEspacial. Objeto, el cohete del que vamos a sumar las etapas.
+     * @return int suma. Devuelve el resultado de la suma de las etapas de ambos cohetes.
+     */
     public int sumarEtapas(CoheteEspacial c) {
         
         int suma = this.etapas + c.etapas ;
@@ -208,6 +311,11 @@ public class CoheteEspacial {
     // ------------------------- MÉTODO MAIN ---------------------------------
     // -----------------------------------------------------------------------
     
+    /**
+     * Método principal donde realizamos la ejecuión.
+     * 
+     * @param args 
+     */
     public static void main(String[] args) {
         
        // Mensaje de bienvenida por consola
