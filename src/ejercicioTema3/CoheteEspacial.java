@@ -372,6 +372,18 @@ public class CoheteEspacial {
                 
                 cohete2.setEtapas(-1);
                 System.out.println("\n" + cohete2.toString());
+                
+            // APARTADO M
+            
+                // Muestro el número de cohetes que se han creado
+                
+                System.out.println("\nHas creado " + CoheteEspacial.contadorCohetes + " cohetes.");
+                
+            // APARTADO N
+                
+                // Muestro el valor de la constante GRAVEDAD
+                
+                System.out.println("\nEl valor de la gravedad es: " + CoheteEspacial.GRAVEDAD);
     }
    
 }
