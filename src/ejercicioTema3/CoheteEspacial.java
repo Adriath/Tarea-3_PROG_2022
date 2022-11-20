@@ -29,6 +29,7 @@ public class CoheteEspacial {
     
     private static int contadorCohetes ;
     
+     // Resto de variables
     private String denominacion ; // Nombre y modelo del cohete
     private String agenciaEspacial ; // Nombre de la agencia
     private float altura ; // En metros
@@ -169,6 +170,25 @@ public class CoheteEspacial {
                 ", reutilizable=" + reutilizable + '}';
     }
     
+    
+    // ------------ EJERCICIO 4 ------------
+        /* Creación del método public float calcularVolumen(). */
+    
+    public float calcularVolumen(){
+        float volumen = (this.altura) * (this.diametro / 2) * (CoheteEspacial.PI) ;
+        return volumen ;
+    }
+    
+    // ------------ EJERCICIO 5 ------------
+        /* Creación del método sumarEtapas. */
+    
+    public int sumarEtapas(CoheteEspacial c) {
+        
+        this.etapas = c.etapas ;
+        return etapas ;
+    }
+    
+    
     // ------------ EJERCICIO 2 ------------
         /* Creación del main, lectura de datos y asignación de atributos. */
     
@@ -232,11 +252,9 @@ public class CoheteEspacial {
         
         System.out.println(miCohete.toString());
         
+        
+        
     }
     
-    // ------------ EJERCICIO 4 ------------
-        /* Creación del método public float calcular*Volumen(). */
-    
-    
-    
+   
 }
